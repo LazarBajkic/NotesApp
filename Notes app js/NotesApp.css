@@ -1,0 +1,109 @@
+
+body{
+    background-color: lightyellow;
+}
+
+.inputDiv{
+    width: 475px;
+    display: grid;
+    grid-template-columns: 475px;
+    grid-auto-rows: auto;
+}
+
+.noteTitle{
+    height: 30px;
+    font-size: 26px;
+}
+
+.noteBody{
+    font-size: 18px;
+    height: 400px;
+    vertical-align: top;
+    overflow-wrap: break-word;
+    resize: none;
+}
+
+input,textarea{
+    border: solid rgb(210, 137, 0,0.4) 2px;
+    background-color: rgb(255, 184, 52,0.2);
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 10px 5px 10px;
+}
+
+.noteTitle:active,.noteBody:active,.noteTitle:focus,.noteBody:focus{
+    border: solid rgb(210, 137, 0,0.4) 2px;   
+    outline: none;
+}
+
+.individualNote,.inputDiv{
+  word-wrap: break-word;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 30px 20px 30px;
+  border: solid rgb(210, 137, 0,0.4) 4px;
+  background-color: rgb(255, 184, 52,0.2);
+  border-radius: 15px;
+}
+
+b{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.printNotes{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(4,475px);
+}
+
+.delBtn{
+    margin-top: -3%;
+    margin-left: -6%;
+    border: solid rgb(210, 137, 0,0.4) 2px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(237, 185, 52, 0.468);
+    color: rgb(255, 244, 219);
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.delBtn:hover,
+.submitNote:hover{
+    color: rgb(210, 137, 0,0.4);
+    background-color: rgb(255, 244, 219);
+}
+
+.errorP{
+    color: rgba(170, 134, 41, 0.468);
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submitNote{
+    border: solid rgb(210, 137, 0,0.4) 2px;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(237, 185, 52, 0.468);
+    color: rgb(255, 244, 219);
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
